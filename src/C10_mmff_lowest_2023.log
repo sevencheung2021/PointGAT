@@ -1,0 +1,17 @@
+number of ../Data/c10_train smiles 9472: 
+loading*****************************************
+number of ../Data/c10_valid smiles 1186: 
+loading*****************************************
+number of ../Data/c10_test smiles 1183: 
+loading*****************************************
+training*************************************************************
+Epoch 0
+train_RMSE and valid_RMSE
+0 0.51990277 0.52006775
+train_MAE and valid_MAE
+0 0.49859866 0.4987691
+Epoch 1
+train_RMSE and valid_RMSE
+1 0.10215798 0.102825105
+train_MAE and valid_MAE
+1 0.08020941 0.08109035
