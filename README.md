@@ -30,7 +30,7 @@ rdkit==2021.09.5
 
 
 ### 运行项目
-src/main.py，根据报错安装其他所需的 python 包。
+src/pointgay.py，根据报错安装其他所需的 python 包。
 
 
 
