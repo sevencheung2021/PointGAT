@@ -40,14 +40,8 @@ src/main.py，根据报错安装其他所需的 python 包。
 /weights    存放模型权重
 
 /src/    存放代码文件
-/src/main.py    项目主代码文件，所有的数据集都已经准备好，python main.py 即可运行项目
+/src/pointgat.py    项目主代码文件，所有的数据集都已经准备好，python pointgat.py 即可运行项目
 
 README.md    介绍项目概况
 ```
 
-
-运行项目的方式：
-
-```
-python main.py
-```
