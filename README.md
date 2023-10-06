@@ -13,12 +13,19 @@
 ### 环境
 
 python 3.8.13
+
 torch==1.7.1
+
 numpy==1.22.1
+
 pandas==1.4.2
+
 torch-geometric==1.7.2
+
 pyGPGO==0.5.1
+
 matplotlib-inline==0.1.6
+
 rdkit==2021.09.5
 
 
@@ -35,7 +42,6 @@ src/main.py，根据报错安装其他所需的 python 包。
 /src/    存放代码文件
 /src/main.py    项目主代码文件，所有的数据集都已经准备好，python main.py 即可运行项目
 
-/weight/    存放模型权重
 README.md    介绍项目概况
 ```
 
