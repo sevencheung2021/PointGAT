@@ -24,8 +24,6 @@ torch-geometric==1.7.2
 
 pyGPGO==0.5.1
 
-matplotlib-inline==0.1.6
-
 rdkit==2021.09.5
 
 
