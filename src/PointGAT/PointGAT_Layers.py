@@ -52,7 +52,8 @@ class PointGAT(nn.Module):
         self.bn3 = nn.BatchNorm1d(1024)
         self.bn4 = nn.BatchNorm1d(512)
         self.bn5 = nn.BatchNorm1d(fingerprint_dim)
-        
+
+        self.norm = nn.LayerNorm(fingerprint_dim)
 
         self.fc3 = nn.Linear(fingerprint_dim*2, fingerprint_dim)
         self.fc4 = nn.Linear(fingerprint_dim,1)
@@ -179,13 +180,12 @@ class PointGAT(nn.Module):
 #             print(mol_context.shape,mol_context)
             mol_context = F.elu(mol_context)
             mol_feature = self.mol_GRUCell(mol_context, mol_feature)
+            mol_feature = self.norm(mol_feature)+ atom_level_mol_feature
 
         #     print(mol_feature.shape,mol_feature)
 
             # do nonlinearity
             activated_features_mol = F.relu(mol_feature)           
-
-        mol_feature = mol_feature + atom_level_mol_feature  # ZR add
 
         ##### xyz_feature #####
         batchsize = batch_size
