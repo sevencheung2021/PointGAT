@@ -215,7 +215,7 @@ def main():
 
                 torch.save(model, '../weights/model_'+'C10_'+start_time+'_'+str(best_param["valid_epoch"])+'.pt')
 
-        if (epoch - best_param["train_epoch"] >100) and (epoch - best_param["valid_epoch"] >100):        
+        if epoch - best_param["valid_epoch"] >100:        
             break
 
         print("Epoch",epoch)
